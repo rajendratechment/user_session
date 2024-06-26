@@ -8,20 +8,19 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-      body: const Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            SizedBox(
-              width: double.infinity,
-              height: 250,
-            ),
-            Text("Welcome to home screen")
-
-    ])));
-
+        appBar: AppBar(
+          title: Text(title),
+        ),
+        body: Center(
+            child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+              SizedBox(
+                width: double.infinity,
+                height: 250,
+                child: Image.asset('assets/img.png'),
+              ),
+              Center(child: const Text("Welcome to home screen"))
+            ])));
   }
 }
