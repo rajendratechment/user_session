@@ -17,12 +17,13 @@ this project is the learning only, technically it includes
 6. form validation. 
 
 ## screenshots 
-
+<p align ="left">
 <img src="splash.png" alt="drawing" width="200"/>
 <img src="login.png" alt="drawing" width="200"/>
+</p>
+<p align ="left">
 <img src="signup.png" alt="drawing" width="200"/>
 <img src="home.png" alt="drawing" width="200"/>
-
-### Solar System Exploration, 1950s – 1960s
-
+</p>
+### Bug list
 - [ ] When click on back button in chrome browser it shows crashed
