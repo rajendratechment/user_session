@@ -25,5 +25,7 @@ this project is the learning only, technically it includes
 <img src="signup.png" alt="drawing" width="200"/>
 <img src="home.png" alt="drawing" width="200"/>
 </p>
-### Bug list
+
+###  Bug list
+
 - [ ] When click on back button in chrome browser it shows crashed
