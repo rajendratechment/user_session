@@ -4,7 +4,7 @@ class HomeScreen extends StatelessWidget {
   final String title;
 
   const HomeScreen({super.key, required this.title});
-  
+
 
   @override
   Widget build(BuildContext context) {
@@ -14,17 +14,28 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text(title),
         ),
-        body:  ListView.builder(
-    padding: const EdgeInsets.all(8),
-    itemCount: entries.length,
-    itemBuilder: (BuildContext context, int index) {
-    return Container(
-    height: 50,
-    color: Colors.amber[colorCodes[index]],
-    child: Center(child: Text('Entry ${entries[index]}')),
-    );
-    }
-    ));
+        body: ListView.separated(
+          padding: const EdgeInsets.all(8),
+          itemCount: entries.length,
+          itemBuilder: (BuildContext context, int index) {
+            return GestureDetector(
+               onTap:() =>{
+
+               ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+               content: Text('I am sending message here '),
+               ))
+               },
+                child:
+                Container(
+                height: 50,
+                color: Colors.amber[colorCodes[index]],
+                child: Center(child: Text('Entry ${entries[index]}')),
+
+            ));
+          },
+          separatorBuilder: (BuildContext context,
+              int index) => const Divider(),
+        ));
 
   }
 }
